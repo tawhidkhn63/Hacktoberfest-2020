@@ -18,7 +18,8 @@ class Graph():
                 min_index = v
 
         return min_index
-
+    
+    # For a given source node in the graph, the algorithm finds the shortest path between that node and every other
     def dijkstra(self, src):
         dist = [float('inf')] * self.V
         dist[src] = 0
